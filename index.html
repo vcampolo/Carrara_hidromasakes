@@ -8,7 +8,7 @@
   <meta name="keywords" content="fabricante de hidromasajes, hidromasajes para constructoras, spas para desarrolladoras, bañeras para obras, receptáculos de ducha, venta mayorista de hidromasajes, fabricante de spas Buenos Aires, Parque Industrial Plátanos" />
   <meta name="author" content="Carrara Hidromasajes" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://www.carrarahidromasajes.com/" />
+  <link rel="canonical" href="https://www.carrarahidromasajes.com.ar/" />
 
   <meta property="og:title" content="Carrara Hidromasajes | Soluciones B2B para obras y proyectos" />
   <meta property="og:description" content="Spas, bañeras y receptáculos de ducha para constructoras, desarrolladoras, revendedores y compras por volumen." />
@@ -78,7 +78,7 @@
       gap: 24px;
     }
     .brand { display: flex; align-items: center; gap: 14px; }
-    .brand img { width: 185px; height: auto; }
+    .brand img { width: 168px; height: auto; max-height: 48px; object-fit: contain; display: block; }
     .nav-links { display: flex; align-items: center; gap: 26px; font-size: 14px; font-weight: 600; color: #222; }
     .nav-links a:hover { color: var(--sand-dark); }
     .btn {
@@ -220,6 +220,64 @@
     .card li, .feature-list li { color: #333; font-weight: 650; display: flex; gap: 10px; align-items: flex-start; }
     .card li:before, .feature-list li:before { content: "✓"; color: var(--sand-dark); font-weight: 900; }
 
+
+
+    .product-link { display: inline-flex; margin-top: 22px; font-weight: 900; color: var(--sand-dark); }
+    .product-link:hover { color: var(--black); }
+    .product-detail { background: var(--offwhite); }
+    .product-hero-img {
+      border-radius: 32px;
+      overflow: hidden;
+      border: 1px solid rgba(0,0,0,.08);
+      box-shadow: 0 24px 60px rgba(0,0,0,.08);
+      margin-bottom: 30px;
+    }
+    .product-hero-img img { width: 100%; height: auto; }
+    .product-specs {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin: 28px 0 34px;
+    }
+    .spec {
+      background: #fff;
+      border: 1px solid rgba(0,0,0,.08);
+      border-radius: 22px;
+      padding: 22px;
+    }
+    .spec strong { display: block; font-size: 26px; letter-spacing: -1px; }
+    .spec span { color: #555; font-weight: 750; }
+    .feature-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .feature-image-card {
+      background: #fff;
+      border: 1px solid rgba(0,0,0,.08);
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 18px 45px rgba(0,0,0,.06);
+    }
+    .feature-image-card img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+    .feature-image-card div { padding: 22px; }
+    .feature-image-card h3 { font-size: 22px; }
+    .feature-image-card p { color: #555; }
+
+    .product-placeholder {
+      background: #fff;
+      border: 1px dashed rgba(0,0,0,.22);
+      border-radius: 28px;
+      min-height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 36px;
+      color: #555;
+      font-weight: 800;
+      margin-bottom: 30px;
+    }
+    .product-placeholder span { display: block; color: var(--sand-dark); font-size: 14px; text-transform: uppercase; letter-spacing: 1.6px; margin-bottom: 10px; }
+    .product-detail.alt { background: #fff; }
+    .product-detail.alt .spec, .product-detail.alt .feature-image-card, .product-detail.alt .product-placeholder { background: var(--offwhite); }
+
     .b2b { background: var(--black); color: var(--white); }
     .b2b .lead, .b2b p { color: #d9d9d9; }
     .b2b-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 48px; align-items: start; }
@@ -286,7 +344,7 @@
     @media (max-width: 920px) {
       .nav-links { display: none; }
       .hero-grid, .b2b-grid, .contact-grid, .seo-grid { grid-template-columns: 1fr; }
-      .cards { grid-template-columns: 1fr; }
+      .cards, .feature-gallery, .product-specs { grid-template-columns: 1fr; }
       .steps { grid-template-columns: 1fr 1fr; }
       h1 { letter-spacing: -2px; }
     }
@@ -367,6 +425,7 @@
               <li>Compras por volumen</li>
               <li>Asesoramiento para obra</li>
             </ul>
+            <a class="product-link" href="#spas">Ver fotos y características →</a>
           </article>
           <article class="card">
             <div class="icon">02</div>
@@ -377,6 +436,7 @@
               <li>Constructoras y desarrolladoras</li>
               <li>Venta mayorista</li>
             </ul>
+            <a class="product-link" href="#baneras">Ver sección preparada →</a>
           </article>
           <article class="card">
             <div class="icon">03</div>
@@ -387,10 +447,162 @@
               <li>Canales de reventa</li>
               <li>Pedidos B2B</li>
             </ul>
+            <a class="product-link" href="#receptaculos">Ver sección preparada →</a>
           </article>
         </div>
       </div>
     </section>
+
+    <section id="spas" class="product-detail">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Spas Carrara</div>
+          <h2>Spa versión cuadrada profunda</h2>
+          <p class="lead">Modelo pensado para amenities, terrazas, hoteles, complejos y proyectos residenciales que buscan una solución wellness de alto impacto visual.</p>
+        </div>
+
+        <div class="product-hero-img">
+          <img src="spa-hero.png" alt="Spa Carrara cuadrado profundo instalado en deck moderno" loading="lazy" />
+        </div>
+
+        <div class="product-specs">
+          <div class="spec"><strong>2.00 x 2.00 m</strong><span>formato cuadrado</span></div>
+          <div class="spec"><strong>0.80 m</strong><span>profundidad</span></div>
+          <div class="spec"><strong>5 a 6</strong><span>personas de capacidad</span></div>
+        </div>
+
+        <div class="feature-gallery">
+          <article class="feature-image-card">
+            <img src="spa-jets.png" alt="Detalle de múltiples jets de hidromasaje en spa Carrara" loading="lazy" />
+            <div>
+              <h3>Múltiples jets de hidromasaje</h3>
+              <p>Sistema de jets distribuidos para una experiencia de hidromasaje completa.</p>
+            </div>
+          </article>
+          <article class="feature-image-card">
+            <img src="spa-medidas.png" alt="Spa Carrara versión cuadrada profunda 2 por 2 metros" loading="lazy" />
+            <div>
+              <h3>Versión cuadrada profunda</h3>
+              <p>Medidas 2.00 x 2.00 x 0.80 m, con capacidad estimada para 5 a 6 personas.</p>
+            </div>
+          </article>
+          <article class="feature-image-card">
+            <img src="spa-instalacion.png" alt="Spa Carrara con instalación embutida en deck" loading="lazy" />
+            <div>
+              <h3>Instalación embutida</h3>
+              <p>Ideal para proyectos residenciales, amenities, terrazas, hoteles y complejos.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="baneras" class="product-detail alt">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Bañeras Carrara</div>
+          <h2>Bañeras para obras, edificios y desarrollos</h2>
+          <p class="lead">Sección preparada para sumar fotos reales o renders de bañeras Carrara. La idea es mostrar modelos, terminaciones, medidas y usos recomendados para constructoras, desarrolladoras y revendedores.</p>
+        </div>
+
+        <div class="product-placeholder">
+          <div>
+            <span>Espacio reservado para imagen principal</span>
+            Hero de bañera: foto de producto instalado o render limpio para web.
+          </div>
+        </div>
+
+        <div class="product-specs">
+          <div class="spec"><strong>Modelos</strong><span>para obra nueva y renovación</span></div>
+          <div class="spec"><strong>B2B</strong><span>cotización por volumen</span></div>
+          <div class="spec"><strong>AR</strong><span>fabricación nacional</span></div>
+        </div>
+
+        <div class="feature-gallery">
+          <article class="feature-image-card">
+            <div class="product-placeholder" style="border-radius:0;min-height:190px;margin:0;">
+              <div><span>Imagen pendiente</span>Terminaciones</div>
+            </div>
+            <div>
+              <h3>Terminaciones y diseño</h3>
+              <p>Espacio preparado para mostrar bordes, brillo, materialidad y detalles de fabricación.</p>
+            </div>
+          </article>
+          <article class="feature-image-card">
+            <div class="product-placeholder" style="border-radius:0;min-height:190px;margin:0;">
+              <div><span>Imagen pendiente</span>Medidas</div>
+            </div>
+            <div>
+              <h3>Medidas y modelos</h3>
+              <p>Sección lista para incorporar fichas, medidas disponibles y aplicaciones por tipo de obra.</p>
+            </div>
+          </article>
+          <article class="feature-image-card">
+            <div class="product-placeholder" style="border-radius:0;min-height:190px;margin:0;">
+              <div><span>Imagen pendiente</span>Instalación</div>
+            </div>
+            <div>
+              <h3>Aplicación en proyectos</h3>
+              <p>Ideal para edificios, viviendas, reformas, hoteles y desarrollos residenciales.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="receptaculos" class="product-detail">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Receptáculos de ducha Carrara</div>
+          <h2>Receptáculos para baños modernos y obras de volumen</h2>
+          <p class="lead">Sección preparada para sumar imágenes de platos o receptáculos de ducha. Está pensada para mostrar colores, texturas, rejilla, instalación y ventajas para obra nueva, reformas y reventa.</p>
+        </div>
+
+        <div class="product-placeholder">
+          <div>
+            <span>Espacio reservado para imagen principal</span>
+            Hero de receptáculo: foto frontal o render de baño moderno con el producto instalado.
+          </div>
+        </div>
+
+        <div class="product-specs">
+          <div class="spec"><strong>Obra</strong><span>baños de proyectos residenciales</span></div>
+          <div class="spec"><strong>Reventa</strong><span>canales mayoristas y distribuidores</span></div>
+          <div class="spec"><strong>Diseño</strong><span>soluciones modernas y prácticas</span></div>
+        </div>
+
+        <div class="feature-gallery">
+          <article class="feature-image-card">
+            <div class="product-placeholder" style="border-radius:0;min-height:190px;margin:0;">
+              <div><span>Imagen pendiente</span>Textura / superficie</div>
+            </div>
+            <div>
+              <h3>Superficie y terminación</h3>
+              <p>Espacio para mostrar textura, colores, material y aspecto final del receptáculo.</p>
+            </div>
+          </article>
+          <article class="feature-image-card">
+            <div class="product-placeholder" style="border-radius:0;min-height:190px;margin:0;">
+              <div><span>Imagen pendiente</span>Rejilla / desagüe</div>
+            </div>
+            <div>
+              <h3>Detalle de desagüe</h3>
+              <p>Sección preparada para destacar rejilla, pendiente, terminación y facilidad de instalación.</p>
+            </div>
+          </article>
+          <article class="feature-image-card">
+            <div class="product-placeholder" style="border-radius:0;min-height:190px;margin:0;">
+              <div><span>Imagen pendiente</span>Instalado en baño</div>
+            </div>
+            <div>
+              <h3>Aplicación en obra</h3>
+              <p>Ideal para mostrar el producto instalado en baños de edificios, hoteles o desarrollos.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
 
     <section id="b2b" class="b2b">
       <div class="container b2b-grid">
